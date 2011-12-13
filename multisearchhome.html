@@ -1,0 +1,125 @@
+<html>
+<!-- multiSearchHome 0.4 / 2011 -->
+<!-- https://github.com/fluaten -->
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>Search</title>
+		
+		<style type="text/css">	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1;background-color:#fff}ol,ul{list-style:none}blockquote,q{quotes:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0}div.main{height:300px;text-align:left;position:absolute;top:50%;margin-top:-150px;width:100%}div.content{padding-bottom:1px;height:228px;text-align:left;position:absolute;top:50%;margin-top:-170px;left:50%;margin-left:-288px;width:576px}body{background-color:#eaeaea;font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif}div.search{width:300px;float:left;display:block;margin-bottom:10px;margin-left:16px;margin-top:10px}input#searchinput{padding:9px;font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;border-style:none;width:100%;border:1px solid #eaeaea}input#searchinput:hover{border:1px solid #a9a9a9}div.searchradio{color:#212121;float:left;width:141px;font-size:12px;margin-top:15px}input#submitinput{font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;padding:10px;margin-top:10px;background-color:#d5d5d5;width:100%;border-style:none}#searchchoice div.searchradio label{padding:5px}#searchchoice div.searchradio label:hover{background-color:#fffeff}input#submitinput:hover{color:#000;background-color:#fffeff}	
+		</style>
+		
+		<script type="text/javascript">
+		function dosearch(){var b=document.searchform;for(i=b.sengines.length-1;i>-1;i--){if(b.sengines[i].checked){var a=b.sengines[i].value+escape(b.searchterms.value)}}window.location.href=a;return false};
+		</script>
+		
+	</head>
+	
+<body onload="document.searchform.searchterms.focus()">
+	<div class="main">
+		<div class="content">
+			<form name="searchform" id="radioDemo" onSubmit="return dosearch();"><!-- Start searchform -->	
+		
+			<input type="text" name="searchterms" SIZE="75" id="searchinput"><br><!-- Search box -->	
+			
+			<div id="searchbut">
+				<INPUT type="submit" value="Search" id="submitinput"><!-- Search button -->
+			</div><br>
+			
+				<div id="searchchoice"><!-- Start searchchoice -->
+			
+					<div class="searchradio">
+						<label for="searchengines gg">
+							<input name="sengines" id="searchengines gg" type="radio" value="https://encrypted.google.com/search?q=" CHECKED > Google SSL
+							</label>
+					</div>
+						
+					<div class="searchradio">
+						<label for="searchengines di">
+							<input name="sengines" id="searchengines di" type="radio" value="https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=" > Scroogle
+							</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines d">
+							<input name="sengines" id="searchengines d" type="radio" value="http://delicious.com/tag/"> Delicious
+						</label>
+					</div>
+
+					
+					<div class="searchradio">
+						<label for="searchengines t">
+							<input name="sengines" id="searchengines t" type="radio" value="http://search.twitter.com/search?q="> Twitter
+						</label>
+					</div>
+								
+					<div class="searchradio">
+						<label for="searchengines y">
+							<input name="sengines" id="searchengines y" type="radio" value="https://www.youtube.com/results?search_query="> Youtube
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines da">
+							<input name="sengines" id="searchengines da" type="radio" value="http://www.dailymotion.com/relevance/?searchinput="> Dailymotion
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines gi">
+							<input name="sengines" id="searchengines gi" type="radio" value="http://images.google.com/images?q="> Google Images
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines gm">
+							<input name="sengines" id="searchengines gm" type="radio" value="http://maps.google.fr/maps?q="> Google Maps
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines bm">
+							<input name="sengines" id="searchengines bm" type="radio" value="http://www.bing.com/maps/default.aspx?q="> Bing Maps
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines im">
+							<input name="sengines" id="searchengines im" type="radio" value="http://www.imdb.com/find?q="> IMDB
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines dis">
+							<input name="sengines" id="searchengines dis" type="radio" value="http://www.discogs.com/search?q="> Discogs
+						</label>
+					</div>
+
+					<div class="searchradio">
+						<label for="searchengines wen">
+							<input name="sengines" id="searchengines wen" type="radio" value="https://secure.wikimedia.org/wikipedia/en/wiki/Special:Search?search="> Wikipedia (en)
+						</label>
+					</div>	
+					
+					<div class="searchradio">
+						<label for="searchengines wdfr">
+							<input name="sengines" id="searchengines wdfr" type="radio" value="https://secure.wikimedia.org/wiktionary/en/wiki/Special:Search?search="> Wikitionary (en)
+						</label>
+					</div>
+
+					<div class="searchradio">
+						<label for="searchengines b">
+							<input name="sengines" id="searchengines b" type="radio" value="http://www.reddit.com/search?q="> Reddit
+						</label>
+					</div>
+			
+				</div><!-- End searchchoice -->	
+					
+			</form><!-- End searchform -->	
+
+	
+		</div>			
+	</div>
+	
+</body>
+
+</html>

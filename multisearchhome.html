@@ -1,16 +1,18 @@
 <html>
-<!-- multiSearchHome 0.5 / 2011 -->
+<!-- multiSearchHome 0.6 / 2011-2012 -->
 <!-- https://github.com/fluaten -->
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 		<title>Search</title>
-		
-		<style type="text/css">	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1;background-color:#fff}ol,ul{list-style:none}blockquote,q{quotes:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0}div.main{height:300px;text-align:left;position:absolute;top:50%;margin-top:-150px;width:100%}div.content{padding-bottom:1px;height:228px;text-align:left;position:absolute;top:50%;margin-top:-170px;left:50%;margin-left:-288px;width:576px}body{background-color:#eaeaea;font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif}div.search{width:300px;float:left;display:block;margin-bottom:10px;margin-left:16px;margin-top:10px}input#searchinput{padding:9px;font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;border-style:none;width:100%;border:1px solid #eaeaea}input#searchinput:hover{border:1px solid #a9a9a9}div.searchradio{color:#212121;float:left;width:141px;font-size:12px;margin-top:15px}input#submitinput{font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;padding:10px;margin-top:10px;background-color:#d5d5d5;width:100%;border-style:none}#searchchoice div.searchradio label{padding:5px}#searchchoice div.searchradio label:hover{background-color:#fffeff}input#submitinput:hover{color:#000;background-color:#fffeff}	
-		</style>
-		
-		<script type="text/javascript">
-		function dosearch(){var b=document.searchform;for(i=b.sengines.length-1;i>-1;i--){if(b.sengines[i].checked){var a=b.sengines[i].value+escape(b.searchterms.value)}}window.location.href=a;return false};
-		</script>
+			<!-- Inline CSS -->		
+				<style type="text/css">	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1;background-color:#fff}ol,ul{list-style:none}blockquote,q{quotes:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0}div.main{height:300px;text-align:left;position:absolute;top:50%;margin-top:-150px;width:100%}div.content{padding-bottom:1px;height:228px;text-align:left;position:absolute;top:50%;margin-top:-170px;left:50%;margin-left:-288px;width:576px}body{background-color:#eaeaea;font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif}div.search{width:300px;float:left;display:block;margin-bottom:10px;margin-left:16px;margin-top:10px}input#searchinput{padding:9px;font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;border-style:none;width:100%;border:1px solid #eaeaea}input#searchinput:hover{border:1px solid #a9a9a9}div.searchradio{color:#212121;float:left;width:141px;font-size:12px;margin-top:15px}input#submitinput{font:16px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;color:#424242;padding:10px;margin-top:10px;background-color:#d5d5d5;width:100%;border-style:none}#searchchoice div.searchradio label{padding:5px}#searchchoice div.searchradio label:hover{background-color:#fffeff}input#submitinput:hover{color:#000;background-color:#fffeff}	
+				</style>
+		<!-- Inline javascript -->			
+				<script type="text/javascript">
+		function dosearch(){var a=document.searchform;if(a.sengines[a.sengines.length-1].checked){var b=a.senginesselect.options[a.senginesselect.selectedIndex].value+escape(a.searchterms.value)}else{for(i=a.sengines.length-1;i>-1;i--){if(a.sengines[i].checked){var b=a.sengines[i].value+escape(a.searchterms.value)}}}window.location.href=b;return false}
+				</script>
+		<!-- Inline favicon -->		
+		<link href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD///8A6urqANXV1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIRERERERERERERERERERERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 		
 	</head>
 	
@@ -29,7 +31,7 @@
 			
 					<div class="searchradio">
 						<label for="searchengines gg">
-							<input name="sengines" id="searchengines gg" type="radio" value="https://encrypted.google.com/search?q=" CHECKED > Google SSL
+							<input name="sengines" id="searchengines gg" type="radio" value="https://www.google.com/search?q=" CHECKED > Google
 						</label>
 					</div>
 										
@@ -49,20 +51,13 @@
 						<label for="searchengines bin">
 							<input name="sengines" id="searchengines bin" type="radio" value="http://www.bing.com/search?q=" > Bing
 						</label>
-					</div>					
-
-					<div class="searchradio">
-						<label for="searchengines d">
-							<input name="sengines" id="searchengines d" type="radio" value="http://delicious.com/tag/"> Delicious
-						</label>
-					</div>
-
+					</div>	
 					
 					<div class="searchradio">
 						<label for="searchengines t">
 							<input name="sengines" id="searchengines t" type="radio" value="http://search.twitter.com/search?q="> Twitter
 						</label>
-					</div>
+					</div>			
 								
 					<div class="searchradio">
 						<label for="searchengines y">
@@ -71,8 +66,45 @@
 					</div>
 					
 					<div class="searchradio">
+						<label for="searchengines vim">
+							<input name="sengines" id="searchengines vim" type="radio" value="https://www.google.com/search?q=site%3Avimeo.com+"  > Vimeo
+							</label>
+					</div>
+					
+					<div class="searchradio">
 						<label for="searchengines da">
-							<input name="sengines" id="searchengines da" type="radio" value="http://www.dailymotion.com/relevance/search/"> Dailymotion
+							<input name="sengines" id="searchengines da" type="radio" value="http://www.dailymotion.com/relevance/?searchinput="> Dailymotion
+						</label>
+					</div>
+
+					<div class="searchradio">
+						<label for="searchengines d">
+							<input name="sengines" id="searchengines d" type="radio" value="http://delicious.com/tag/"> Delicious
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines pin">
+							<input name="sengines" id="searchengines pin" type="radio" value="http://pinboard.in/t:"> Pinboard
+						</label>
+					</div>
+					
+					
+					<div class="searchradio">
+						<label for="searchengines dii">
+							<input name="sengines" id="searchengines dii" type="radio" value="http://www.diigo.com/tag/"> Diigo
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines b">
+							<input name="sengines" id="searchengines b" type="radio" value="http://www.reddit.com/search?q="> Reddit
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines fli">
+							<input name="sengines" id="searchengines fli" type="radio" value="http://www.flickr.com/search/?q="> Flickr
 						</label>
 					</div>
 					
@@ -116,6 +148,12 @@
 						<label for="searchengines wdfr">
 							<input name="sengines" id="searchengines wdfr" type="radio" value="https://secure.wikimedia.org/wiktionary/en/wiki/Special:Search?search="> Wikitionary (en)
 						</label>
+					</div>		
+					
+					<div class="searchradio">
+						<label for="searchengines tum">
+							<input name="sengines" id="searchengines tum" type="radio" value="http://www.tumblr.com/tagged/"> Tumblr
+						</label>
 					</div>				
 					
 					<div class="searchradio">
@@ -123,10 +161,25 @@
 							<input name="sengines" id="searchengines urb" type="radio" value="http://www.urbandictionary.com/define.php?term="> Urban dictionary
 						</label>
 					</div>
+					
+					<div class="searchradio">
+					</div>
 
 					<div class="searchradio">
-						<label for="searchengines b">
-							<input name="sengines" id="searchengines b" type="radio" value="http://www.reddit.com/search?q="> Reddit
+						<label for="searchengines gtr">
+							<input name="sengines" id="searchengines gtra" type="radio" hidden>
+							<select name="senginesselect" onChange="document.getElementById('searchengines gtra').checked = true;">
+							<option>Google Translate</option>
+							<option value="http://translate.google.com/?langpair=fr|en&q=">fr > en</option>
+							<option value="http://translate.google.com/?langpair=de|en&q=">de > en</option>
+							<option value="http://translate.google.com/?langpair=es|en&q=">es > en</option>
+							<option value="http://translate.google.com/?langpair=en|fr&q=">en > fr</option>
+							<option value="http://translate.google.com/?langpair=en|de&q=">en > de</option>
+							<option value="http://translate.google.com/?langpair=en|es&q=">en > es</option>
+							<option value="http://enfr.dict.cc/?s=">Dict.cc en <> fr</option>
+							<option value="http://www.dict.cc/?s=">Dict.cc en <> de</option>
+							<option value="http://dict.leo.org/ende?lp=ende&search=">Leo en <> de</option>
+						</select>
 						</label>
 					</div>
 			

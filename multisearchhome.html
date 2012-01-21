@@ -1,5 +1,5 @@
 <html>
-<!-- multiSearchHome 0.9 / 2011-2012 -->
+<!-- multiSearchHome 0.91 / 2011-2012 -->
 <!-- https://github.com/fluaten -->
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -32,7 +32,7 @@
 			            if (a.sengines[i].checked) {
 			                if (a.sengines[i].value == "global") {
 			                    for (j = 0; j < a.sengines.length - 1; j++) {
-			                        if (j > 3 && j != 14 && j != 15 && j != 16 && j != 17 && j < 19) {
+			                        if (j > 3 && j != 14 && j != 15 && j < 20) {
 			                            var c = a.sengines[j].value + escape(a.searchterms.value);
 			                            window.open(c)
 			                        }
@@ -123,20 +123,20 @@
 					</div>
 					
 					<div class="searchradio">
-						<label for="searchengines pin">
-							<input name="sengines" id="searchengines pin" type="radio" value="http://pinboard.in/t:"> Pinboard
+						<label for="searchengines tum">
+							<input name="sengines" id="searchengines tum" type="radio" value="http://www.tumblr.com/tagged/"> Tumblr
 						</label>
-					</div>
-										
-					<div class="searchradio">
-						<label for="searchengines dii">
-							<input name="sengines" id="searchengines dii" type="radio" value="http://www.diigo.com/tag/"> Diigo
-						</label>
-					</div>
+					</div>							
 					
 					<div class="searchradio">
 						<label for="searchengines b">
 							<input name="sengines" id="searchengines b" type="radio" value="http://www.reddit.com/search?q="> Reddit
+						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines pin">
+							<input name="sengines" id="searchengines pin" type="radio" value="http://pinboard.in/t:"> Pinboard
 						</label>
 					</div>
 					
@@ -164,15 +164,22 @@
 						</label>
 					</div>
 					
+
 					<div class="searchradio">
 						<label for="searchengines im">
-							<input name="sengines" id="searchengines im" type="radio" value="http://www.imdb.com/find?q="> IMDB
+							<input name="sengines" id="searchengines im" type="radio" value="http://topsy.com/s?q="> Topsy
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines dis">
-							<input name="sengines" id="searchengines dis" type="radio" value="http://www.discogs.com/search?q="> Discogs
+							<input name="sengines" id="searchengines dis" type="radio" value="http://trendistic.indextank.com/"> Trendistic
+						</label>
+					</div>
+
+					<div class="searchradio">
+						<label for="searchengines dii">
+							<input name="sengines" id="searchengines dii" type="radio" value="http://www.diigo.com/tag/"> Diigo
 						</label>
 					</div>
 
@@ -185,12 +192,11 @@
 					<div class="searchradio">
 						<label for="searchengines global">
 							<input name="sengines" id="searchengines global" type="radio" value="global"> 			
-							<b>Global</b> (12/19)
+							<b>Global</b> (15/19)
 						</label>
 					</div>
 					
-					<div class="searchradio">
-					</div>
+
 					
 					<div class="searchradio">
 						<label for="searchengines dico">
@@ -242,10 +248,11 @@
 							<option>------------</option>
 							<option value="	https://www.google.com/search?hl=en&amp;safe=off&amp;aq=f&amp;q=site%3Afacebook.com+">&nbsp;Facebook</option>
 							<option value="	https://www.google.com/search?hl=en&amp;q=site%3Aplus.google.com+">&nbsp;Google+</option>
-							<option value="http://www.tumblr.com/tagged/">&nbsp;Tumblr</option>
 							<option>------------</option>
-							<option value="http://topsy.com/s?q=">&nbsp;Topsy</option>			
-							<option value="http://trendistic.indextank.com/">&nbsp;Trendistic</option>
+							<option value="http://www.imdb.com/find?q=">&nbsp;IMDB</option>			
+    						<option value="http://www.rottentomatoes.com/search/?search="/>&nbsp;Rotten Tomatoes</option>
+							<option value="http://www.discogs.com/search?q=">&nbsp;Discogs</option>
+							<option>------------</option>
 							<option value="http://www.google.com/search?hl=en&gl=us&tbm=nws&btnmeta_news_search=1&oq=zea&aq=1&aqi=d1g1d-o1&amp;q=">&nbsp;Google News</option>
 							<option value="http://www.bing.com/news/search?q=">&nbsp;Bing News</option>
 							<option>------------</option>

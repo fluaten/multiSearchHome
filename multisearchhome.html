@@ -1,5 +1,5 @@
 <html>
-<!-- multiSearchHome 0.95 / 2011-2012 -->
+<!-- multiSearchHome 0.96 / 2011-2012 -->
 <!-- https://github.com/fluaten -->
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -32,7 +32,7 @@
 			            if (a.sengines[i].checked) {
 			                if (a.sengines[i].value == "global") {
 			                    for (j = 0; j < a.sengines.length - 1; j++) {
-			                        if (j > 3 && j != 14 && j != 15 && j < 20) {
+			                        if (j > 2 && j != 14 && j != 15 && j < 19) {
 			                            var c = a.sengines[j].value + escape(a.searchterms.value);
 			                            window.open(c)
 			                        }
@@ -73,43 +73,43 @@
 							<input name="sengines" id="searchengines gg" type="radio" value="https://www.google.com/search?q=" CHECKED > Google
 						</label>
 					</div>
-										
+
+					<div class="searchradio">
+						<label for="searchengines duck">
+							<input name="sengines" id="searchengines duck" type="radio" value="https://duckduckgo.com/?q=" > Duckduckgo 
+						</label>
+					</div>
+
 					<div class="searchradio">
 						<label for="searchengines star">
 							<input name="sengines" id="searchengines star" type="radio" value="https://startingpage.com/do/search?language=english&cat=web&query=" > Startingpage 
 						</label>
 					</div>
-											
-					<div class="searchradio">
-						<label for="searchengines di">
-							<input name="sengines" id="searchengines di" type="radio" value="https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=" > Scroogle
-						</label>
-					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines bin">
 							<input name="sengines" id="searchengines bin" type="radio" value="http://www.bing.com/search?q=" > Bing
 						</label>
 					</div>	
-					
+
 					<div class="searchradio">
 						<label for="searchengines t">
 							<input name="sengines" id="searchengines t" type="radio" value="http://search.twitter.com/search?q="> Twitter
 						</label>
 					</div>			
-								
+
 					<div class="searchradio">
 						<label for="searchengines y">
 							<input name="sengines" id="searchengines y" type="radio" value="https://www.youtube.com/results?search_query="> Youtube
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines vim">
-							<input name="sengines" id="searchengines vim" type="radio" value="https://www.google.com/search?q=site%3Avimeo.com+"  > Vimeo
+							<input name="sengines" id="searchengines vim" type="radio" value="http://vimeo.com/search?q="  > Vimeo
 							</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines da">
 							<input name="sengines" id="searchengines da" type="radio" value="http://www.dailymotion.com/relevance/search/"> Dailymotion
@@ -121,49 +121,49 @@
 							<input name="sengines" id="searchengines d" type="radio" value="http://delicious.com/tag/"> Delicious
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines tum">
 							<input name="sengines" id="searchengines tum" type="radio" value="http://www.tumblr.com/tagged/"> Tumblr
 						</label>
 					</div>							
-					
+
 					<div class="searchradio">
 						<label for="searchengines b">
 							<input name="sengines" id="searchengines b" type="radio" value="http://www.reddit.com/search?q="> Reddit
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines pin">
-							<input name="sengines" id="searchengines pin" type="radio" value="http://pinboard.in/t:"> Pinboard
+							<input name="sengines" id="searchengines pin" type="radio" value="https://picasaweb.google.com/lh/view?q="> Picassa
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines fli">
 							<input name="sengines" id="searchengines fli" type="radio" value="http://www.flickr.com/search/?q="> Flickr
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines gi">
 							<input name="sengines" id="searchengines gi" type="radio" value="https://www.google.com/search?prmd=imvns&source=lnms&tbm=isch&sa=X&oi=mode_link&q="> Google Images
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines gm">
 							<input name="sengines" id="searchengines gm" type="radio" value="http://maps.google.fr/maps?q="> Google Maps
 						</label>
 					</div>
-					
+
 					<div class="searchradio">
 						<label for="searchengines bm">
 							<input name="sengines" id="searchengines bm" type="radio" value="http://www.bing.com/maps/default.aspx?q="> Bing Maps
 						</label>
 					</div>
-					
+
 
 					<div class="searchradio">
 						<label for="searchengines im">
@@ -173,13 +173,7 @@
 
 					<div class="searchradio">
 						<label for="searchengines dis">
-							<input name="sengines" id="searchengines dis" type="radio" value="http://trendistic.indextank.com/"> Trendistic
-						</label>
-					</div>
-
-					<div class="searchradio">
-						<label for="searchengines dii">
-							<input name="sengines" id="searchengines dii" type="radio" value="http://labs.creativecommons.org/demos/search/?q="> Creative commons
+							<input name="sengines" id="searchengines dis" type="radio" value="http://www.imdb.com/find?q="> IMDB
 						</label>
 					</div>
 
@@ -187,12 +181,18 @@
 						<label for="searchengines wen">
 							<input name="sengines" id="searchengines wen" type="radio" value="https://secure.wikimedia.org/wikipedia/en/wiki/Special:Search?search="> Wikipedia (en)
 						</label>
+					</div>
+					
+					<div class="searchradio">
+						<label for="searchengines yub">
+							<input name="sengines" id="searchengines yub" type="radio" value="http://www.yubnub.org/parser/parse?command="> Yubnub
+						</label>
 					</div>		
 
 					<div class="searchradio">
 						<label for="searchengines global">
 							<input name="sengines" id="searchengines global" type="radio" value="global"> 			
-							<b>Global</b> (14/20)
+							<b>Global</b> (15/20)
 						</label>
 					</div>
 
@@ -203,6 +203,7 @@
 							<option>Dictionary</option>
 							<option>------------</option>
 							<option value="http://www.smartdefine.org/">&nbsp;Smart define</option>
+							<option value="http://www.onelook.com/?w=">&nbsp;One look</option>
 							<option value="http://www.lexic.us/definition-of/">&nbsp;Lexic.us</option>
 							<option value="http://www.synonym.com/synonyms/">&nbsp;Synonyms</option>
 							<option value="http://www.theconjugator.com/la/conjugaison/du/verbe/">&nbsp;Conjugator</option>
@@ -237,56 +238,93 @@
 							</select>
 						</label>
 					</div>
-					
-					<div class="searchradio">
-						<label for="searchengines others">
-							<input name="sengines" id="searchengines others" type="radio" hidden>
-							<select name="senginesselect3" onChange="document.getElementById('searchengines others').checked = true;">
-							<option>Others</option>
-							<option>------------</option>
-							<option value="	https://www.google.com/search?hl=en&amp;safe=off&amp;aq=f&amp;q=site%3Afacebook.com+">&nbsp;Facebook</option>
-							<option value="	https://www.google.com/search?hl=en&amp;q=site%3Aplus.google.com+">&nbsp;Google+</option>
-							<option value="http://pinterest.com/search/?q=">&nbsp;Pinterest</option>
-							<option value="http://socialmention.com/search?q=">&nbsp;Social mention</option>
-							<option value="http://hashtags.org/">&nbsp;Hash tags</option>	
-							<option value="http://digg.com/search?q=">&nbsp;Digg</option>
-							<option value="http://www.diigo.com/tag/">&nbsp;Diigo</option>							
-							<option>------------</option>
-							<option value="http://www.imdb.com/find?q=">&nbsp;IMDB</option>			
-	    					<option value="http://www.rottentomatoes.com/search/?search="/>&nbsp;Rotten Tomatoes</option>
-							<option value="http://www.archive.org/search.php?query=">&nbsp;Archive.org</option>
-							<option>------------</option>
-							<option value="http://www.discogs.com/search?q=">&nbsp;Discogs</option>
-							<option value="http://www.last.fm/music/">&nbsp;Last.fm</option>
-							<option value="http://www.myspace.com/search/Music?q=">&nbsp;Myspace</option>								
-							<option value="http://www.music-map.com/">&nbsp;Music map</option>
-							<option>------------</option>													
-							<option value="http://hypem.com/search/">&nbsp;Hype machine</option>
-							<option value="http://www.mixcloud.com/artist/">&nbsp;Mixcloud artist</option>
-							<option value="http://soundcloud.com/tracks/search?q[fulltext]=">&nbsp;Soundcloud</option>
-							<option value="http://www.findsounds.com/ISAPI/search.dll?keywords=">&nbsp;Find sounds</option>
-							<option>------------</option>
-							<option value="https://github.com/search?q=">&nbsp;Github</option>	
-							<option value="http://sourceforge.net/directory/?q=">&nbsp;Sourceforge</option>	
-							<option value="http://code.google.com/hosting/search?q=">&nbsp;Google code</option>
-							<option>------------</option>
-							<option value="http://dearcomputer.nl/gir/?s=4&imgtype=any&q=">&nbsp;Google Image rip</option>
-							<option value="http://compfight.com/search/">&nbsp;Compfight flickr</option>
-							<option value="http://www.iconfinder.com/search/?q=">&nbsp;Icon finder</option>
-							<option value="http://www.seeklogo.com/tag.html?q=">&nbsp;Seeklogo</option>
-							<option>------------</option>
-							<option value="http://www.google.com/search?hl=en&gl=us&tbm=nws&btnmeta_news_search=1&oq=zea&aq=1&aqi=d1g1d-o1&amp;q=">&nbsp;Google News</option>
-							<option value="http://www.bing.com/news/search?q=">&nbsp;Bing News</option>
-							<option>------------</option>
-							<option value="http://weatherspark.com/#!dashboard;q="/>&nbsp;Weather Spark</option>
-							<option value="http://allrecipes.com/Search/Recipes.aspx?WithTerm=">&nbsp;All recipes</option>	
-							<option>------------</option>
-							<option value="http://wikitravel.org/en/Special:Search?ns0=1&searchx=Search&search=">&nbsp;Wiki travel</option>
-							<option value="http://www.xe.com/ucc/convert/?language=en&From=USD&To=EUR&Amount=">&nbsp;USD > EUR</option>
-							<option value="http://www.xe.com/ucc/convert/?language=en&From=EUR&To=USD&Amount=">&nbsp;EUR > USD</option>			
-						</select>
-						</label>
-					</div>
+
+						<div class="searchradio">
+							<label for="searchengines autre">
+								<input name="sengines" id="searchengines autre" type="radio" hidden>
+								<select name="senginesselect3" onChange="document.getElementById('searchengines dico').checked = true;">
+								<option>Others</option>
+								<option>------------</option>
+								<option value="https://www.google.fr/search?hl=fr&amp;safe=off&amp;aq=f&amp;q=site%3Afacebook.com+">&nbsp;Facebook</option>
+								<option value="https://www.google.fr/search?hl=fr&amp;q=site%3Aplus.google.com+">&nbsp;Google+</option>		
+								<option value="http://maps.google.com/maps?layer=c&z=17&iwloc=A&sll=41.351200,-106.285865&cbp=13,278.7,0,0,0&cbll=41.351187,-106.285748&ved=0CA0Q2wU&sa=X&ei=XLUfTaSvHKLUzATo9Zz5AQ&q=">&nbsp;Street view</option>
+								<option>------------</option>
+							    <option value="http://www.rottentomatoes.com/search/?search="/>&nbsp;Rotten Tomatoes</option>
+								<option value="http://www.archive.org/search.php?query=">&nbsp;Archive.org</option>
+								<option>------------</option>
+								<option value="http://www.discogs.com/search?q=">&nbsp;Discogs</option>
+								<option value="http://www.last.fm/music/">&nbsp;Last.fm</option>
+								<option value="http://www.myspace.com/search/Music?q=">&nbsp;Myspace</option>								
+								<option value="http://www.music-map.com/">&nbsp;Music map</option>
+								<option>------------</option>				
+								<option value="http://hypem.com/search/">&nbsp;Hype machine</option>
+								<option value="http://www.mixcloud.com/search/?mixcloud_query=">&nbsp;Mixcloud</option>
+								<option value="http://bandcamp.com/tag/">&nbsp;BandCamp tag</option>
+								<option value="http://soundcloud.com/tracks/search?q[fulltext]=">&nbsp;Soundcloud</option>
+								<option value="http://www.findsounds.com/ISAPI/search.dll?keywords=">&nbsp;Find sounds</option>
+								<option value="	http://www.midomi.com/index.php?action=main.text_search&searchTerm=">&nbsp;Midomi</option>
+								<option>------------</option>
+								<option value="https://www.google.com/trends/?q=">&nbsp;Google Trend</option>
+								<option value="http://socialmention.com/search?q=">&nbsp;Social mention</option>
+								<option value="http://www.friendorfollow.com/">&nbsp;Friend or follow</option>
+								<option value="http://pinboard.in/t:">&nbsp;Pinboard.in</option>
+								<option value="http://pinterest.com/search/?q=">&nbsp;Pinterest</option>
+								<option value="http://hashtags.org/">&nbsp;Hash tags</option>
+								<option value="http://www.diigo.com/tag/">&nbsp;Diigo</option>
+								<option value="http://www.dmoz.org/search?q=">&nbsp;Dmoz</option>
+								<option value="http://www.freebase.com/search?query=">&nbsp;Freebase</option>
+								<option value="http://addictomatic.com/topic/">&nbsp;Addictomatic</option>
+								<option>------------</option>
+								<option value="https://play.google.com/store/search?q=">&nbsp;Google Play</option>
+								<option value="https://encrypted.google.com/search?q=site%3Aitunes.apple.com+">&nbsp;iTunes</option>
+								<option>------------</option>
+								<option value="https://github.com/search?q=">&nbsp;Github</option>	
+								<option value="http://sourceforge.net/directory/?q=">&nbsp;Sourceforge</option>	
+								<option value="http://code.google.com/hosting/search?q=">&nbsp;Google code</option>	
+								<option value="https://www.ohloh.net/p?q=">&nbsp;Ohloh</option>	
+								<option value="http://freecode.com/search?q=">&nbsp;Freecode</option>	
+								<option value="http://www.koders.com/default.aspx?s=">&nbsp;Koders</option>
+								<option value="http://slashdot.org/index2.pl?fhfilter=">&nbsp;Slashdot</option>
+								<option>------------</option>
+								<option value="hhttp://labs.creativecommons.org/demos/search/?q=">&nbsp;Creative commons</option>
+								<option value="http://dearcomputer.nl/gir/?s=4&imgtype=any&q=">&nbsp;Google Image rip</option>
+								<option value="http://www.iconfinder.com/search/?q=">&nbsp;Icon finder</option>
+								<option value="http://dribbble.com/search?q=">&nbsp;Dribbble</option>
+								<option value="http://browse.deviantart.com/?q=">&nbsp;Deviant art</option>
+								<option value="http://compfight.com/search/">&nbsp;Compfight</option>
+								<option value="http://www.seeklogo.com/tag.html?q=">&nbsp;Seeklogo</option>
+								<option>------------</option>
+								<option value="http://www.googleartproject.com/search/?q=">&nbsp;Google Art Project</option>
+								<option value="http://www.artcyclopedia.com/scripts/tsearch.pl?t=">&nbsp;Artcyclopedia</option>
+								<option value="http://www.infoplease.com/search?q=">&nbsp;Infoplease</option>		
+								<option value="http://www.sudoc.abes.fr/DB=2.1/SET=15/TTL=1/CMD?ACT=SRCHA&amp;IKT=4&amp;SRT=RLV&amp;TRM=">&nbsp;Sudoc</option>						
+								<option value="http://www.sweetsearch.com/search?q=">&nbsp;Sweetsearch</option>
+								<option value="http://www.worldcat.org/search?qt=worldcat_org_all&q=">&nbsp;Worldcat</option>
+								<option value="http://www.connotea.org/search?q=">&nbsp;Connotea</option>
+								<option>------------</option>
+								<option value="http://news.google.fr/news?edition=fr&amp;ie=UTF-8&amp;safe=off&amp;sa=G&amp;scoring=d&amp;q=">&nbsp;Google News</option>
+								<option value="http://www.bing.com/news/search?mkt=fr-FR&amp;setlang=match&amp;q=">&nbsp;Bing News</option>	
+								<option value="http://digg.com/search?q=">&nbsp;Digg</option>
+								<option>------------</option>
+								<option>------------</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=USD&To=EUR&Amount=">&nbsp;USD > EUR</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=EUR&To=USD&Amount=">&nbsp;EUR > USD</option>
+								<option>------------</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=CAD&To=EUR&Amount=">&nbsp;CAD > EUR</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=EUR&To=CAD&Amount=">&nbsp;EUR > CAD</option>
+								<option>------------</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=GBP&To=EUR&Amount=">&nbsp;GBP > EUR</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=EUR&To=GBP&Amount=">&nbsp;EUR > GBP</option>
+								<option>------------</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=CHF&To=EUR&Amount=">&nbsp;CHF > EUR</option>
+								<option value="http://www.xe.com/ucc/convert/?language=fr&From=EUR&To=CHF&Amount=">&nbsp;EUR > CHF</option>
+								<option>------------</option>
+								<option value="http://wikitravel.org/fr/Special:Search?ns0=1&searchx=Rechercher&search=">&nbsp;Wiki travel</option>
+								<option value="http://allrecipes.com/Search/Recipes.aspx?WithTerm=">&nbsp;All recipes</option>
+								<option value="http://weatherspark.com/#!dashboard;q="/>&nbsp;Weather Spark</option>
+							</select>
+							</label>
+						</div>
 
 				</div><!-- End searchchoice -->	
 					

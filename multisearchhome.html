@@ -97,22 +97,22 @@
 					document.getElementById("senginesselect3").selectedIndex = 2;
 				} else if ((k == 97 || k == 49) && e.altKey && !e.ctrlKey && !e.shiftKey) { // 1
 					document.getElementById("searchengines dico").checked = true;
-					document.getElementById("senginesselect2").selectedIndex = 20;
+					document.getElementById("senginesselect2").selectedIndex = 22;
 				} else if ((k ==98 || k == 50)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 2
 					document.getElementById("searchengines misc").checked = true;
-					document.getElementById("senginesselect3").selectedIndex = 20;
+					document.getElementById("senginesselect3").selectedIndex = 22;
 				} else if ((k == 99 || k == 51)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 3
 					document.getElementById("searchengines misc").checked = true;
-					document.getElementById("senginesselect3").selectedIndex = 15;
+					document.getElementById("senginesselect3").selectedIndex = 17;
 				} else if ((k == 100 || k == 52)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 4
 					document.getElementById("searchengines misc").checked = true;
-					document.getElementById("senginesselect3").selectedIndex = 89;
+					document.getElementById("senginesselect3").selectedIndex = 93;
 				} else if ((k == 101 || k == 53)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 5
 					document.getElementById("searchengines misc").checked = true;
-					document.getElementById("senginesselect3").selectedIndex = 90;
+					document.getElementById("senginesselect3").selectedIndex = 94;
 				} else if ((k ==102 || k == 54)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 6
 					document.getElementById("searchengines misc").checked = true;
-					document.getElementById("senginesselect3").selectedIndex = 57;
+					document.getElementById("senginesselect3").selectedIndex = 60;
 				} else if ((k == 103 || k == 55)  && e.altKey && !e.ctrlKey && !e.shiftKey) { // 7
 					document.getElementById("searchengines translate").checked = true;
 					document.getElementById("senginesselect").selectedIndex = 2;
@@ -124,10 +124,22 @@
 					document.getElementById("senginesselect").selectedIndex = 5;
 				} else if (k == 9  && !e.altKey && !e.ctrlKey && !e.shiftKey) { // Tab
 					document.searchform.searchterms.focus();
-				
-				} else if (k == 80 && e.altKey && !e.ctrlKey && !e.shiftKey) { // p
+				}
+			
+			
+				else if (k == 80 && e.altKey && !e.ctrlKey && !e.shiftKey) { // p
 			        document.getElementById("searchengines GoogleScholar").checked = true;
-				}  
+				}  else if (k == 76 && e.altKey && !e.ctrlKey && !e.shiftKey) { // l
+			        document.getElementById("searchengines rapidlibrary").checked = true;
+				} else if (k == 70 && e.altKey && !e.ctrlKey && !e.shiftKey) { // f
+			        document.getElementById("searchengines FreeTV").checked = true;
+			    } else if (k == 90 && e.altKey && !e.ctrlKey && !e.shiftKey) { // z
+			        document.getElementById("searchengines Filetube").checked = true;
+			    } else if (k == 88 && e.altKey && !e.ctrlKey && !e.shiftKey) { // x
+			        document.getElementById("searchengines Avax").checked = true;
+			    } 
+					
+
 				else { return true; }
 			    return false;
 			}
@@ -165,7 +177,7 @@
 
 						<div class="searchradio">
 							<label for="searchengines Startingpage">
-								<input name="sengines" id="searchengines Startingpage" type="radio" value="https://startingpage.com/do/search?language=english&cat=web&with_language=lang_fr&query="  > Startingpage (fr) <span class="alt">S</span>
+								<input name="sengines" id="searchengines Startingpage" type="radio" value="https://startingpage.com/do/search?language=english&cat=web&with_language=lang_fr&query="  > Startingpage <span class="alt">S</span>
 								</label>
 						</div>
 
@@ -177,7 +189,7 @@
 
 						<div class="searchradio">
 							<label for="searchengines Twitter">
-								<input name="sengines" id="searchengines Twitter" type="radio" value="http://search.twitter.com/search?q="> Twitter <span class="alt">H</span>
+								<input name="sengines" id="searchengines Twitter" type="radio" value="https://twitter.com/search?q="> Twitter <span class="alt">H</span>
 							</label>
 						</div>
 
@@ -196,30 +208,6 @@
 						<div class="searchradio">
 							<label for="searchengines Dailymotion">
 								<input name="sengines" id="searchengines Dailymotion" type="radio" value="http://www.dailymotion.com/relevance/search/"> Dailymotion <span class="alt">D</span>
-							</label>
-						</div>
-
-						<div class="searchradio">
-							<label for="searchengines Delicious">
-								<input name="sengines" id="searchengines Delicious" type="radio" value="http://delicious.com/tag/"> Delicious <span class="alt">E</span>
-							</label>
-						</div>
-
-						<div class="searchradio">
-							<label for="searchengines Tumblr">
-								<input name="sengines" id="searchengines Tumblr" type="radio" value="http://www.tumblr.com/tagged/"> Tumblr <span class="alt">C</span>
-							</label>
-						</div>
-
-						<div class="searchradio">
-							<label for="searchengines Reddit">
-								<input name="sengines" id="searchengines Reddit" type="radio" value="http://www.reddit.com/search?q="> Reddit <span class="alt">R</span>
-							</label>
-						</div>
-					
-						<div class="searchradio">
-							<label for="searchengines Flickr">
-								<input name="sengines" id="searchengines Flickr" type="radio" value="http://www.flickr.com/search/?q="> Flickr <span class="alt">K</span>
 							</label>
 						</div>
 
@@ -246,6 +234,30 @@
 								<input name="sengines" id="searchengines BingMaps" type="radio" value="http://www.bing.com/maps/default.aspx?q="> Bing Maps <span class="alt">O</span>
 							</label>
 						</div>
+					
+						<div class="searchradio">
+							<label for="searchengines Delicious">
+								<input name="sengines" id="searchengines Delicious" type="radio" value="http://delicious.com/tag/"> Delicious <span class="alt">E</span>
+							</label>
+						</div>
+
+						<div class="searchradio">
+							<label for="searchengines Tumblr">
+								<input name="sengines" id="searchengines Tumblr" type="radio" value="http://www.tumblr.com/tagged/"> Tumblr <span class="alt">C</span>
+							</label>
+						</div>
+
+						<div class="searchradio">
+							<label for="searchengines Reddit">
+								<input name="sengines" id="searchengines Reddit" type="radio" value="http://www.reddit.com/search?q="> Reddit <span class="alt">R</span>
+							</label>
+						</div>
+					
+						<div class="searchradio">
+							<label for="searchengines Flickr">
+								<input name="sengines" id="searchengines Flickr" type="radio" value="http://www.flickr.com/search/?q="> Flickr <span class="alt">K</span>
+							</label>
+						</div>
 
 						<div class="searchradio">
 							<label for="searchengines Topsy">
@@ -270,8 +282,7 @@
 								<input name="sengines" id="searchengines global" type="radio" value="global"><b> Global</b> (14) <span class="alt">A</span>
 							</label>
 						</div>	
-						
-						</div>					
+									
 					
 						<div class="searchradio">
 							<label for="searchengines dico">
@@ -283,6 +294,8 @@
 								<option value="http://www.cnrtl.fr/synonymie/">&nbsp;Cnrtl Synonymie</option>
 								<option value="http://portail.atilf.fr/cgi-bin/dico1look.pl?strippedhw=&headword=">&nbsp;Français classique</option>
 								<option value="http://francois.gannaz.free.fr/Littre/xmlittre.php?submit=Rechercher&requete=">&nbsp;XMLittré</option>
+								<option value="http://www.dictionnaire.exionnaire.com/que-signifie.php?application=rime&mot=">&nbsp;Rimes</option>
+								<option value="http://www.mediadico.com/dictionnaire/definition/">&nbsp;Mediadico</option>
 								<option>------------</option>
 								<option value="http://bescherelle.leconjugueur.com/frconjugue.php?verbe=">&nbsp;Conjugaison</option>
 								<option value="http://bonpatron.com/?submitbutton=Vérifier le texte&typedText=">&nbsp;BonPatron</option>
@@ -298,6 +311,11 @@
 								<option stared="true" value="http://thesaurus.reference.com/search?q=" />&nbsp;Thesaurus.com </option>
 								<option value="http://www.etymonline.com/index.php?search=">&nbsp;Etymology</option>	
 								<option value="http://www.urbandictionary.com/define.php?term=">&nbsp;Urban dico (1)</option>
+								<option>------------</option>
+								<option value="http://books.google.com/ngrams/graph?year_start=1500&year_end=2000&corpus=15&smoothing=3&content=">&nbsp;Google Ngram (en)</option>
+								<option value="http://books.google.com/ngrams/graph?year_start=1500&year_end=2000&corpus=19&smoothing=3&content=">&nbsp;Google Ngram (fr)</option>
+								<option value="http://books.google.com/ngrams/graph?year_start=1500&year_end=2000&corpus=20&smoothing=3&content=">&nbsp;Google Ngram (de)</option>
+								<option value="http://books.google.com/ngrams/graph?year_start=1500&year_end=2000&corpus=21&smoothing=3&content=">&nbsp;Google Ngram (es)</option>
 							</select>
 							</label>
 						</div>		
@@ -308,7 +326,7 @@
 								<select name="senginesselect" id="senginesselect" onChange="document.getElementById('searchengines translate').checked = true;">
 								<option>Traductions</option>
 								<option>-google-----</option>
-								<option value="http://translate.google.com/?langpair=en|fr&q=">&nbsp;en > fr (7)</option>
+								<option value="http://translate.google.com/?langpair=en|fr&q=">&nbsp;en > fr  (7)</option>
 								<option value="http://translate.google.com/?langpair=de|fr&q=">&nbsp;de > fr (8)</option>
 								<option value="http://translate.google.com/?langpair=es|fr&q=">&nbsp;es > fr</option>
 								<option value="http://translate.google.com/?langpair=fr|en&q=">&nbsp;fr > en (9)</option>
@@ -335,7 +353,9 @@
 								<option>Autres</option>
 								<option>------------</option>
 								<option value="https://www.google.fr/search?hl=fr&amp;safe=off&amp;aq=f&amp;q=site%3Afacebook.com+">&nbsp;Facebook (0)</option>
-								<option value="https://www.google.fr/search?hl=fr&amp;q=site%3Aplus.google.com+">&nbsp;Google+</option>
+								<option value="https://www.google.fr/search?hl=fr&amp;q=site%3Aplus.google.com+">&nbsp;Google+ (6)</option>
+								<option value="http://www.scoop.it/search?q=">&nbsp;Scoop It</option>
+								<option value="http://storify.com/search?q=">&nbsp;Storify</option>
 								<option value="http://pinboard.in/t:">&nbsp;Pinboard.in</option>
 								<option value="http://pinterest.com/search/?q=">&nbsp;Pinterest</option>
 								<option value="http://www.exalead.com/search/web/results/?q=">&nbsp;Exalead</option>
@@ -344,9 +364,7 @@
 							
 								<option>------------</option>
 								<option value="http://nominatim.openstreetmap.org/search.php?q=">&nbsp;Open street map</option>
-						<option value="http://www.qsview.com/s/">&nbsp;Instant streetview</option>		
-							
-							
+								<option value="http://www.qsview.com/s/">&nbsp;Instant streetview</option>		
 								<option value="http://maps.google.com/maps?layer=c&z=17&iwloc=A&sll=41.351200,-106.285865&cbp=13,278.7,0,0,0&cbll=41.351187,-106.285748&ved=0CA0Q2wU&sa=X&ei=XLUfTaSvHKLUzATo9Zz5AQ&q=">&nbsp;Street view</option>
 								<option value="http://wikitravel.org/fr/Special:Search?ns0=1&searchx=Rechercher&search=">&nbsp;Wiki travel</option>
 								<option>------------</option>
@@ -365,7 +383,8 @@
 								<option value="http://bandcamp.com/tag/">&nbsp;BandCamp tag</option>
 								<option value="http://soundcloud.com/tracks/search?q[fulltext]=">&nbsp;Soundcloud</option>
 								<option value="http://www.findsounds.com/ISAPI/search.dll?keywords=">&nbsp;Find sounds</option>
-								<option value="http://www.midomi.com/index.php?action=main.text_search&searchTerm=">&nbsp;Midomi</option>				
+								<option value="http://www.midomi.com/index.php?action=main.text_search&searchTerm=">&nbsp;Midomi</option>
+															<option value="http://grooveshark.com/#!/search?q=">&nbsp;Grooveshark</option>	
 								<option>------------</option>
 								<option value="https://www.google.fr/search?tbm=app&amp;q=">&nbsp;Google App</option>
 								<option value="https://play.google.com/store/search?q=">&nbsp;Google Play</option>
@@ -399,6 +418,7 @@
 								<option>------------</option>
 								<option value="http://www.googleartproject.com/search/?q=">&nbsp;Google Art Project</option>
 								<option value="https://www.google.fr/search?tbm=bks&amp;q=">&nbsp;Google Books</option>
+								<option value="https://idreambooks.com/newbooks/search?q=">&nbsp;iDreamBooks</option>
 								<option value="http://www.gutenberg.org/ebooks/search/?query=">&nbsp;Gutenberg Project</option>
 								<option value="http://www.artcyclopedia.com/scripts/tsearch.pl?t=">&nbsp;Artcyclopedia</option>
 								<option value="http://www.infoplease.com/search?q=">&nbsp;Infoplease</option>
@@ -446,13 +466,12 @@
 								<option value="http://www.xe.com/ucc/convert/?language=fr&From=CHF&To=EUR&Amount=">&nbsp;CHF > EUR</option>
 								<option value="http://www.xe.com/ucc/convert/?language=fr&From=EUR&To=CHF&Amount=">&nbsp;EUR > CHF</option>
 														
-								<option>------------</option>
+		
 							</select></label></div>
-							<div id="shortcut">Alt + ...</div>	
 					</div><!-- End searchchoice -->	
 					
 				</form><!-- End searchform -->	
-				
+				<div id="shortcut">Alt + ...</div>	
 			</div>	
 			
 		</div>
@@ -460,3 +479,4 @@
 	</body>
 
 	</html>
+	
